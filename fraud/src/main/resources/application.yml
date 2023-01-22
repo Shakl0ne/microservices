@@ -1,13 +1,13 @@
 server:
-  port: 8080
+  port: 8081
   error:
     include-message: always
 
 spring:
   application:
-    name: customer
+    name: fraud
   datasource:
-    url: jdbc:postgresql://localhost:5432/customer
+    url: jdbc:postgresql://localhost:5432/fraud
     username: postgres
     password: postgres
   jpa:
@@ -23,7 +23,7 @@ spring:
 #    username: user
 #    password: password
 #
-eureka:
-  client:
-    server-url:
-      default-zone: http://localhost:8761/eureka
+#eureka:
+#  client:
+#    server-url:
+#      default-zone: http://localhost:8761/eureka
